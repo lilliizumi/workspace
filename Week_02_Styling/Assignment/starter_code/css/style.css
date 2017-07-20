@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Relaxr
+Client: Relaxr
+Author: Lilli
+Developer @GA in LA
 */
 
 
@@ -17,6 +17,14 @@ Developer @GA in NYC
 /* BASE STYLES
 /*******************************************/
 
+header {
+  height: 500px;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 body {
 
 }
@@ -29,8 +37,138 @@ a {
 /******************************************
 /* LAYOUT
 /*******************************************/
+h1 {
+	color: #FFF;
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 40px;
+  padding-left: 50px;
+  padding-top: 50px;
+  margin-top: 0;
+}
 
+h2 {
+  font-family: 'Roboto';
+	color: rgb(16,204,114);
+  font-weight: 900;
+  font-size: 36px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+h3 {
+	font-family: 'Roboto';
+  color: #033048;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  padding-top:50px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+p {
+	font-family: 'Roboto';
+  color: rgb(142,149,146);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+footer {
+	background-color: rgb(242,244,246);
+	color: rgb(113,122,128);
+}
+
+blockquote {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 40px;
+  width: 550px;
+  text-align: center;
+}
+
+small {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 9px;
+  text-align: center;
+  margin: 40px;
+}
+
+aside {
+
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+ .button{
+  display: inline-block;
+  background:red;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Roboto';
+  width: 300px;
+  padding: 15px 10px 15px 10px;
+}
+.primary{
+  background: rgb(16,204,114);
+  text-align: center;
+  margin-left: 50px;
+}
+.secondary {
+  background: rgb(115,176,248);
+}
+
+.services-grid {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+}
+
+.services-grid-container {
+	flex: 1;
+	padding: 30px;
+  margin: 30px;
+}
+
+.services-grid .middle-item{
+  padding:0px 25px;
+}
+
+.button-blockquote-container {
+  flex: 1;
+}
+
+.button-blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p.cite {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+header, section, div, footer {
+	border: 1px solid black;
+}
+
+div#container {
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-template-rows: 100px 300px 100px 100px;
+	grid-template-areas: "a a a"
+						"b c"
+						"d e f"
+						"g g g"
+}
+
+header {
+	grid-area: a;
+}
+
+section#left {
+	grid-area: b;
+}
+
+section#right {
+	grid-area: c;
+}
+
+div#bottom-grid-1 {
+	grid-area: d;
+}
+
+div#bottom-grid-1 {
+	grid-area: e;
+}
+
+div#bottom-grid-1 {
+	grid-area: f;
+}
+
+footer {
+	grid-area: g;
+}

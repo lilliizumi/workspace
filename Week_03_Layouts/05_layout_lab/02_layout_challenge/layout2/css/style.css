@@ -1,0 +1,32 @@
+header, section, aside, footer {
+	border: 1px solid black;
+}
+
+div {
+	display: grid;
+	grid-template-columns: 100px 500px 100px;
+	grid-template-rows: 100px 400px 100px;
+	grid-template-areas: "a a a"
+						"b c d"
+						"e e e"
+}
+
+header {
+	grid-area: a;
+}
+
+section#left {
+	grid-area: b;
+}
+
+section#center {
+	grid-area: c;
+}
+
+aside {
+	grid-area: d;
+}
+
+footer {
+	grid-area: e;
+}

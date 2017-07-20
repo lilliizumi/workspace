@@ -31,6 +31,12 @@ Copyright copy
 
 ****FONT WEIGHTS & SIZES****
 
+Light: 300
+Regular: 400
+Medium: 500
+Bold: 700
+Black: 900
+
 Font: Roboto
 Weight: Light, Light Italic, Regular, Medium, Bold, Black
 

@@ -1,0 +1,40 @@
+header {
+	height: 200px;
+	/*border: 2px solid black;*/
+	background-image: url('../bg.jpg');
+	/*background-size: contain;*/
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+
+section div {
+	border: 1px solid black;
+	flex: 1;
+	padding: 10px;
+	margin: 20px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+section, ul, header {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav {
+	flex: 1;
+}
+
+header h1 {
+	flex: 1;
+}
+
+header nav ul {
+	list-style-type: none;
+}
