@@ -1,0 +1,159 @@
+body {
+	margin: 20px;
+	display: grid;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	grid-template-columns: 100%;
+	grid-template-rows: 150px 600px 100px;
+	grid-template-areas: "a"
+						 "b"
+						 "c"
+}
+
+header {
+	background-image: url('images/bg.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 150px;
+	grid-area: a;
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	color: white;
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 40px;
+	padding-left: 50px;
+	align-items: center;
+}
+
+nav {
+	width: 50%;
+}
+
+ul {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 14px;
+	color: white;
+	height: 100%;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+}
+
+a.main:link {
+	text-decoration: none;
+	color: white;
+}
+
+a.main:hover {
+	text-decoration: underline;
+}
+
+a.side1:link {
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+a.side2:link {
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+section#main {
+	display: flex;
+	grid-area: b;
+	justify-content: space-between;
+	font-family: 'Roboto' ;
+}
+
+div.left-nav-container {
+	grid-area: b;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+}
+
+div.main-blog-container {
+	grid-area: b;
+	width: 55%;
+	overflow: scroll;
+}
+
+div.partners-container {
+	grid-area: b;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+}
+
+aside.left-nav-item {
+	grid-area: b;
+}
+
+aside.main-blog-item {
+	grid-area: b;
+}
+
+aside.partners-item {
+	grid-area: b;
+}
+
+ul#categories {
+	color: black;
+}
+
+ul#posts {
+	color: black;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+footer {
+	grid-area: c;
+	text-align: center;
+	background-color: rgb(242,244,246);
+	color: rgb(113,122,128);
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight:300;
+}
+
+h5 {
+	font-size: 12px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+h6 {
+	grid-area: c;
+	font-family: 'Roboto' ;
+	font-weight: 900;
+	font-size: 40px;
+	margin: 10px;
+}
+
+small {
+	grid-area: c;
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 9px;
+}

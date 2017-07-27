@@ -1,41 +1,55 @@
-header, section, div, footer {
-	border: 1px solid black;
-}
-
-div#container {
+body {
 	display: grid;
-	grid-template-columns: 200px 200px 200px;
-	grid-template-rows: 100px 300px 100px 100px;
-	grid-template-areas: "a a a"
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px 300px 150px 100px;
+	grid-template-areas: "a a"
 						"b c"
-						"d e f"
-						"g g g"
+						"d d"
+						"e e"
 }
 
 header {
 	grid-area: a;
+	background: blue;
 }
 
 section#left {
 	grid-area: b;
+	background: yellow;
 }
 
 section#right {
 	grid-area: c;
+	background: red;
 }
 
-div#bottom-grid-1 {
+section#boxes {
 	grid-area: d;
+	display: flex;
+	justify-content: space-between;
 }
 
-div#bottom-grid-1 {
-	grid-area: e;
+aside.box1 {
+	grid-area: d;
+	width: 32.5%;
+	background: pink;
 }
 
-div#bottom-grid-1 {
-	grid-area: f;
+aside.box2 {
+	grid-area: d;
+	width: 32.5%;
+	background: purple;
+}
+
+aside.box3 {
+	grid-area: d;
+	width: 32.5%;
+	background: green;
 }
 
 footer {
-	grid-area: g;
+	grid-area: e;
+	background: orange;
 }
