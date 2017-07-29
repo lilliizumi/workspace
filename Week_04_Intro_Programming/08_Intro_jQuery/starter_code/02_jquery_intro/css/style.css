@@ -1,0 +1,154 @@
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+* {
+
+  box-sizing: border-box; 
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h3 {
+  color: #033048;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+header {
+  /*padding-top: 32px;*/
+  background: url('../images/bg.jpg') no-repeat top center #fff;
+  background-size: cover;
+  min-height:500px;
+  display:flex;
+  flex-direction: column;
+  padding-left:100px;
+}
+
+header div{
+  flex:2;
+}
+
+header .logo {
+  color: #fff;
+  flex: 1;
+  padding-top: 25px;
+}
+
+header h2 {
+  font-size: 36px;
+  color: #5FDEA1;
+  font-weight: 900;
+  text-shadow: black .25px .25px .25px
+}
+
+.button {
+  border-radius: 5px;
+  font-weight: 900;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  color:#fff;
+}
+
+.primary {
+  background: rgba(16,204,114,1);
+  margin-top:25px;
+}
+
+.secondary {
+  background: rgba(115,176,248,1);
+  margin: 0 auto;
+}
+
+#services {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  background:rgba(255,255,255,.9);
+}
+
+#services div {
+  color: rgb(0,43,69);
+  width: 25%;
+  text-align: center;
+}
+
+#testimonial {
+  padding: 40px 0 70px;
+  color: rgb(142,149,146);
+}
+
+blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 580px;
+  margin: 0 auto;
+}
+
+blockquote cite {
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  margin:5px;
+  font-style: normal;
+}
+
+aside {
+  padding: 30px;
+  text-align: center
+}
+
+footer {
+  padding: 35px 0 45px;
+  background: rgba(242,244,246, 1);
+  text-align: center;
+}
+
+footer .logo {
+  color: rgb(113,122,128);
+  margin-bottom: 10px
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 75px;
+}
+
+footer p {
+  font-size: 9px;
+  color: rgb(113,122,128);
+  font-weight: 700;
+}
