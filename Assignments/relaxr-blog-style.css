@@ -1,8 +1,6 @@
 body {
-	margin: 20px;
+	margin: 0;
 	display: grid;
-	grid-row-gap: 10px;
-	grid-column-gap: 10px;
 	grid-template-columns: 100%;
 	grid-template-rows: 150px 600px 100px;
 	grid-template-areas: "a"
@@ -18,6 +16,7 @@ header {
 	grid-area: a;
 	display: flex;
 	justify-content: space-between;
+	align-items:center
 }
 
 h1 {
@@ -30,8 +29,8 @@ h1 {
 }
 
 header nav {
-	width: 50%;
-	margin: 0;
+	width: 30%;
+	margin-right: 30px;
 }
 
 header nav ul {
@@ -75,71 +74,70 @@ a.main:active {
 	color: white;
 }
 
-a.side1:link {
+a#side1:link {
 	text-decoration: none;
 	color: black;
 	font-size: 14px;
 	font-weight: 300;
 }
 
-a.side1:visited {
+a#side1:visited {
 	color: black;
 }
 
-a.side1:hover {
+a#side1:hover {
 	color: black;
 	text-decoration: underline;
 }
 
-a.side2:link {
+a#side2:link {
 	text-decoration: none;
 	color: black;
 	font-size: 14px;
 	font-weight: 300;
 }
 
-a.side2:visited {
+a#side2:visited {
 	color: black;
 }
 
-a.side2:hover {
+a#side2:hover {
 	color: black;
 	text-decoration: underline;
 }
 
 section#main {
+	grid-area: b;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'Roboto' ;
 }
 
 div.left-nav-container {
-	grid-area: b;
-	width: 20%;
+	width: 10%;
 	display: flex;
 	justify-content: center;
 }
 
 div.main-blog-container {
-	width: 55%;
+	width: 60%;
 	overflow: scroll;
 }
 
-div.partners-container {
+aside.partners-item {
+	text-align: center;
 	width: 20%;
-	text-align: center;
-}
-
-aside.partners-container {
-	text-align: center;
+	margin-right: 20px;
 }
 
 ul#categories {
 	color: black;
+	padding-left: 0;
 }
 
 ul#posts {
 	color: black;
+	padding-left: 0;
 }
 
 p {

@@ -1,8 +1,13 @@
 alert ("Hello!")
 
-document.getElementById('side1').onclick = switchGray;
+document.getElementById('categories').onmouseover = switchBlue;
 
-function switchGray() {
-  document.body.style.backgroundColor = 'gray';
-  document.body.style.color = 'white';
+function switchBlue() {
+  document.body.style.color = 'blue';
+}
+
+document.getElementById('posts').onmouseover = switchBlack;
+
+function switchBlack() {
+  document.body.style.color = 'black';
 }
