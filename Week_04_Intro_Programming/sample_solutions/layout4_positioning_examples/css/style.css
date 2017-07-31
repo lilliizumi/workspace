@@ -1,0 +1,104 @@
+body {
+	margin: 0; /*gets rid of white space around entire page */
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 300px 150px 100px; /* we've gotten rid of one of the rows, b/c position fixed removes the element out of the flow & grid formatting context */
+	grid-template-areas: 
+						 "b"
+						 "c"
+						 "d"
+}
+
+header {
+	grid-area: a;
+	background:blue;
+	display: flex;
+	justify-content: space-between;
+}
+nav {
+	background: rgba(255,255,255,.4);
+	width: 40%;
+}
+a:hover {
+	color: white;
+}
+ul {
+	height: 100%;
+	/*margin:0;*/
+	padding-left: 0px;
+	display: flex;
+	list-style-type:none;
+	align-items:center;
+}
+li {
+	flex: 1;
+	margin: 0 20px;
+	background: red;
+}
+#logo {
+	background: red;
+	width: 300px;
+	height: 50px;
+}
+
+section#main {
+	grid-area: b;
+	background: gray;
+}
+section#lower {
+	display: flex;
+	grid-area: c;
+	background:green;
+}
+#lower div {
+	background: orange;
+	flex: 1;
+	border: 1px solid black;
+}
+
+footer {
+	grid-area: d;
+	background: yellow;
+}
+
+/* step 1 */
+header {
+	position: fixed; /* header sticks to the top */
+	align-items: center; /* helps verticaly center the header's children */
+	width: 100%; /* helps ensure the header takes up the entire width of the page */
+}
+
+/* step 2 */
+.caption {
+	position: absolute; /* so we can use the offset properties (top, left, bottom, right) on the .caption element */
+	bottom: 0;
+	background: black;
+	width: 100%;
+	opacity: .7;
+	color: white; /* the font of the caption text */
+	text-align: center; /* centers the text within the caption */
+}	
+
+/* step 3 */
+.slide {
+	width: 50%; /* so .slide takes up half of the #gallery element's width */
+	height: 100%;  /* so .slide becomes the height of its parent (#gallery element) */
+	position: relative; /* so we can position the caption relative to this .slide element */
+	overflow: hidden; /* so the image doesn't hang over the edge of .slide element */
+}
+
+/* step 4 */
+#gallery {
+	height: 100%; /* sets height of #gallery to its parent's (#main) height */
+}
+
+/* step 5 */
+img {
+	width: 100%;  /* so it fills up it's parent (.slide) */
+}
+
+/* step 6 */
+header {
+	z-index: 1; /* the z-index value is like  a higher layer in Photoshop.  This ensures the header is visible */
+}
+
