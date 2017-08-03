@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Score Keeper</title>
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+
+$(document).ready(function(){
+  	// Let's store current value in a variable
+	var currentNumber = 0;
+
+	// User-initiated events that we want to listen for
+	$("#add-5").click(addFive);
+	$("#add-10").click(addTen);
+	$("#sub-1").click(subOne);
+	$("#zero").click(zero);
+	$("a").click(preventMovement);
+
+	function preventMovement(){
+		event.preventDefault();
+	}
+
+	// User clicks "0"
+		// Set currentNumber = 0
+		function zero(){
+			currentNumber = 0;
+			console.log("inside zero function", "current number: ", currentNumber)
+			$("#result").text(currentNumber);
+		}
+	// User clicks "+5"
+		// Add 5 to currentNumber
+		function addFive(){
+			currentNumber = currentNumber + 5;
+			console.log("inside addFive function", "current number: ", currentNumber)
+			$("#result").text(currentNumber);
+			// $("result").text(<p>Hello</p>);
+			// $("result").html(<p>Hello</p>);
+		}
+	// User clicks "+10"
+		// Add 10 to currentNumber
+		function addTen(){
+			currentNumber = currentNumber + 10;
+			console.log("inside addTen function", "current number: ", currentNumber)
+			$("#result").text(currentNumber);
+		}
+	// User clicks "-1"
+		// Subtract 1 from currentNumber
+		function subOne(){
+			currentNumber = currentNumber - 1;
+			console.log("inside subOne function", "current number: ", currentNumber)
+			$("#result").text(currentNumber);
+		}
+	})
+  </script>
+</head>
+
+<body>
+  <button id="zero">0</button>
+  <button id="add-5">+5</button>
+  <button id="add-10">+10</button>
+  <button id="sub-1">-1</button>
+  <h1 id="result">0</h1>
+
+	<div>
+		<a href="#">This Is A Link</a>
+	</div>
+
+</body>
+</html>
